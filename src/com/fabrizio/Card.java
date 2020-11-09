@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Card {
     // 13 cards per suit , 4 suits
+    // todo: eventually make values and suits into enums 
     private final String[] values = {"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     private final String[] suits = {"Diamonds", "Hearts", "Clubs", "Spades"};
     private String suit;
@@ -15,6 +16,20 @@ public class Card {
         this.value = values[value];
     }
 
+    public void getCard(){
+
+    }
+
+
+    public void removeCard(){
+
+    }
+
+
+    public void deckSize(){
+
+
+    }
     public String[] getSuits() {
         return suits;
     }

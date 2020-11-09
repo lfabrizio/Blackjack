@@ -6,6 +6,7 @@ import java.util.Random;
 
 public class Deck {
     private List<Card> deck;
+    // counter variable
 
     public Deck(){
         this.deck = new ArrayList<Card>();
@@ -32,4 +33,7 @@ public class Deck {
 
         }
     }
+    // TODO: 11/8/2020  : implement add card and remove card methods , maybe in hand class however
+    
+    
 }

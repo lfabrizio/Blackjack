@@ -6,7 +6,7 @@ public class Player {
 
     private String userName;
     int wager;
-    private int cashBalance;
+    private int playerBalance;
     // new deck for player here maybe?
 
     public Player(String userName){
@@ -26,5 +26,14 @@ public class Player {
         int firstBet = playersBet.nextInt();
         return firstBet;
     }
+
+    public int getPlayerBalance() {
+        return playerBalance;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
 
 }
