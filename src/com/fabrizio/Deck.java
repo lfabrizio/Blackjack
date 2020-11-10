@@ -18,12 +18,14 @@ public class Deck {
     }
 
     public List<Card> getDeck() {
+
         return deck;
     }
 
     public void shuffle(){
         Card tempCard;
         Random random = new Random();
+        // how many times to shuffle? 300x for fun
         for(int i = 0; i < 300; i++){
             int cardIndex1 = random.nextInt(deck.size()-1);
             int cardIndex2 = random.nextInt(deck.size()-1);
@@ -34,6 +36,8 @@ public class Deck {
         }
     }
     // TODO: 11/8/2020  : implement add card and remove card methods , maybe in hand class however
-    
+    public void removeCard(int i){
+        this.deck.remove(i);
+    }
     
 }
