@@ -17,8 +17,6 @@ public class Card {
     }
 
 
-
-
     public String[] getSuits() {
         return suits;
     }

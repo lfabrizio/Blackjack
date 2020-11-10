@@ -10,5 +10,7 @@ public class Main {
         for(Card card: deck.getDeck()){
             System.out.println(card);
         }
+
+
     }
 }

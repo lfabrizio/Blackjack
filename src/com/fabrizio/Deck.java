@@ -36,8 +36,18 @@ public class Deck {
         }
     }
     // TODO: 11/8/2020  : implement add card and remove card methods , maybe in hand class however
+
     public void removeCard(int i){
-        this.deck.remove(i);
+        this.deck.get(i);
+    }
+
+    public Card getCard(int i){
+        return this.deck.get(i);
+    }
+// draws from deck.. top card index 0
+    public void draw(Deck top){
+        this.deck.add(top.getCard(0));
+        top.removeCard(0);
     }
     
 }
