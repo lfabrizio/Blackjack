@@ -1,5 +1,5 @@
 package com.fabrizio;
 
 public interface BettingOptions {
-    public int hit();
+    public void draw();
 }

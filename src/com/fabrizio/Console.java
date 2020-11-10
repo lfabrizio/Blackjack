@@ -10,6 +10,10 @@ public class Console {
 
     public void playGame(){
         System.out.println("Welcome to Blackjack!!");
+        //  create a playing deck
+        Deck playingDeck = new Deck();
+        playingDeck.shuffle();
+
         Scanner scan = new Scanner(System.in);
         // here verify players balance and then prompt wager bet through scanner
         //possible while loop for game loop
@@ -24,8 +28,8 @@ public class Console {
                 break;
             }
             // two cards for player
-            playerOnesDeck.draw();
-            playerOnesDeck.draw();
+            playerOnesDeck.draw(playingDeck);
+            playerOnesDeck.draw(playingDeck);
 
             //two cards for the dealer
         }
